@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+img {
+    height: 70px;
+}
+
+.logo {
+    font-weight: 400;
+    color: green;
+
+}
+.logo_container {
+    flex: 1;
+    align-items: center;
+}
+
+.logo_container, .nav_links {
+    display: flex;
+}
+
+nav {
+    flex: 0.5;
+}
+
+.nav_links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav_link {
+    color: grey;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.contents {
+    flex: 1;
+}
+
+.description h1{
+    font-size: 80px;
+    font-weight: 500;
+    background: linear-gradient(to right, #393939,#4949);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.enquiry {
+    padding: 50px 0px 0px 0px;
+}
+
+.enquiry-btn {
+    border: 2px solid gray;
+    background: transparent;
+    background-color: darkolivegreen;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.layout_img {
+    flex: 1;
+}
+
+.layout_img img {
+    height: 50vh;
+}
