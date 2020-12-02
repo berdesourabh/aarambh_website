@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -21,7 +21,8 @@ img {
 }
 
 .logo {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 27px;
     color: green;
 
 }
@@ -36,15 +37,17 @@ img {
 
 nav {
     flex: 0.5;
+    padding-top: 15px;
 }
 
 .nav_links {
     justify-content: space-around;
     list-style: none;
+    
 }
 
 .nav_link {
-    color: grey;
+    color: green;
     font-size: 18px;
     text-decoration: none;
 }
@@ -53,12 +56,16 @@ nav {
     display: flex;
     width: 90%;
     margin: auto;
-    min-height: 80vh;
+    height: 100vh;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .contents {
     flex: 1;
+}
+.description {
+    text-align: center;
 }
 
 .description h1{
@@ -77,6 +84,7 @@ nav {
 
 .enquiry {
     padding: 50px 0px 0px 0px;
+    text-align: center;
 }
 
 .enquiry-btn {
@@ -95,5 +103,117 @@ nav {
 }
 
 .layout_img img {
-    height: 50vh;
+    height: 70vh;
+    width: auto;
+    filter: drop-shadow(0px 1px 2px grey);
+    animation: appear 3s ease;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateZ(-80px);
+    }
+      100% {
+        opacity: 1;
+        transform: translateZ(-80px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .contents {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 55px;
+    }
+    .description h2 p {
+        font-size: 20px;
+    }
+    .layout_img img{
+        height: 55vh;
+        width: auto;
+    }
+    .enquiry {
+        padding: 10px 0px 10px 0px;
+    }
+
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: green;
+    margin: 3px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #1B1B1B;
+    color: honeydew;
+}
+
+.footer_main_content {
+    display: flex;
+
+}
+
+.footer_main_content .box {
+    flex-basis: 50%;
+    padding: 10px 20px ;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 15px 0 0 0;
+}
+
+.right_content .content .social {
+    margin: 15px 0 0 0;
+}
+
+.right_content .content .social a{
+    padding: 0 2px;
+}
+
+.right_content .content .social a span{
+    height: 40px;
+    width: 40px;
+    color: honeydew;
+    background: grey;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.right_content .content .social a .fb:hover{
+   background: #4267B2;
+}
+.right_content .content .social a .insta:hover{
+   background: #fb3958;
+}
+
+.content {
+    text-align: justify;
 }
